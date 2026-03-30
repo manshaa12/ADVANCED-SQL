@@ -29,3 +29,4 @@ ranked as(
 select *
 from ranked 
 where artist_rank <= 2;
+--imp p8

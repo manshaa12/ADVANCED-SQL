@@ -26,3 +26,4 @@ SELECT
 FROM filtered
 GROUP BY transaction_date, user_id
 ORDER BY transaction_date;
+--imp p9

@@ -21,3 +21,4 @@ SELECT
     SUM(CASE WHEN type = 'odd' THEN value ELSE 0 END) AS odd_sum,
     SUM(CASE WHEN type = 'even' THEN value ELSE 0 END) AS even_sum
 FROM categorized;
+--imp p10

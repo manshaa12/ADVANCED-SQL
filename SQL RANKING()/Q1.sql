@@ -16,6 +16,6 @@ select
  rank() over(order by  concert_revenue) AS rank_num
  dense_rank() over(order by concert_revenue) as dense_rank_num
 from concerts_table;
-
+--practice q1
 
 
