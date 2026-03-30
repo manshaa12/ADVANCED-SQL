@@ -15,7 +15,7 @@ select
     order by concert_revenue) AS row_num
  rank() over(order by  concert_revenue) AS rank_num
  dense_rank() over(order by concert_revenue) as dense_rank_num
-from concerts_table 
-this is the concept of rank
+from concerts_table;
+
 
 

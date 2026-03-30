@@ -7,3 +7,12 @@
 
 -- Question:
 -- Show how ranking resets when using PARTITION BY country.
+WITH ranked AS (
+    SELECT 
+        artist_name,
+        country,
+        concert_revenue,
+        RANK() OVER (PARTITION BY country ORDER BY concert_revenue DESC) AS rank_num
+    FROM concerts
+)
+SELECT * FROM ranked;
