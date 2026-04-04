@@ -11,4 +11,4 @@ from(
      LEAD(sales_quantity) over (order by sales_date) AS next_day_sales
     from sales_data 
 )
-where next_day_sales < sales_quantity;
+where next_day_sales < sales_quantity; --imp

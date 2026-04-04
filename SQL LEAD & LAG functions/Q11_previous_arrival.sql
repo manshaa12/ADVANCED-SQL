@@ -9,4 +9,4 @@ select
     partition by route_id
     order by route_id
  ) as prv_arrv_time
-from route_schedule 
+from route_schedule;

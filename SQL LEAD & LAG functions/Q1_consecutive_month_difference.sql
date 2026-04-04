@@ -11,3 +11,4 @@ select
 from stock_prices
 where ticker = 'GOOG'
   and extract (YEAR FROM DATE) = 2022 ;
+--imp  

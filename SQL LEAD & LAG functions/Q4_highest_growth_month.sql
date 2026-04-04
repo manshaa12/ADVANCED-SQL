@@ -9,6 +9,6 @@ from(
      date,
      close,
      LEAD(close) over(order by date) - close as growth,
-     RANK() over (order by LEAD(close) Over (order by date) - close desc as rnnk
+     RANK() over (order by LEAD(close) Over (order by date) - close desc as rnnk)
 
 ) -- difficult
